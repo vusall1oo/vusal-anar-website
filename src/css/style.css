@@ -1,6 +1,147 @@
-*
-{
+@import url("../css/components/navbar.css");
+
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: Montserra;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url("../img/mbr-18.jpg");
+    max-width: 100%;
+    min-height: 90vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+
+}
+
+.bg-texts {
+    position: absolute;
+    top: 50%;
+    font-family: WorkSans;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+  
+    gap: 30px;
+    /* border: 1px solid red; */
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.bg-texts h1 {
+    font-size: 110px;
+    color: white;
+    font-weight: bold;
+}
+.bg-texts h4
+{
+    font-family: Montserra;
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+
+}
+.bg-buttons
+{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.bg-buttons button
+{
+    width: 150px;
+    height: 55px;
+}
+.bg-buttons .buy-now-button
+{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: Montserra;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+.bg-buttons .buy-now-button:hover
+{
+    background-color: white;
+    color: gray;
+   
+}
+.bg-buttons .more-button
+{
+    background-color: rgb(57, 85, 170);
+    border: none;
+    color: white;
+    font-family: Montserra;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+.bg-buttons .more-button:hover
+{
+    background-color: rgb(12, 22, 53);   
+}
+
+@media only screen and (min-width:321px) and (max-width:767px) {
+
+    .bg-texts h1{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        font-size: 70px;
+        left: 50%;
+        transform: translate(-50%,10%);
+        align-items: center;
+    }
+    
+
+}
+
+
+/* ________Tablet and More Device Size_______________________________________ */
+
+@media only screen and (min-width: 768px) and (max-width:1280px) 
+{
+
+    .bg-texts h1{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        font-size: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        left: 50%;
+        transform: translate(-50%,10%);
+        align-items: center;
+    }   
+
+}
+
+
+/* ________Desktop and More Huge Device Size_______________________________________ */
+
+@media only screen and (min-width: 1280px) 
+{
+  
 }
