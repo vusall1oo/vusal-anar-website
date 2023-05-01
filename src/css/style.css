@@ -13,7 +13,174 @@
     margin: 0;
     box-sizing: border-box;
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+#story {
+    min-width: 100%;
+    min-height: 50vh;
+    background-color: rgba(0, 0, 255, 0.537);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+
+}
+
+.story_title {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    padding-left: 150px;
+    font-family: sans-serif;
+    padding-top: 70px;
+
+}
+
+.story_text {
+    color: white;
+    width: 1000px;
+    padding-left: 150px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.images1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 75vh;
+    gap: 20px;
+}
+
+.images1 img {
+    width: 35%;
+}
+
+#image {
+    min-width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#image img {
+    width: 35%;
+}
+
+#title {
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.537);
+    display: flex;
+    min-height: 80vh;
+    justify-content: space-around;
+    font-family: Worksans;
+    align-items: center;
+    position: relative;
+}
+
+
+.titlehead {
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    font-family: 'karla' sans-serif;
+    font-style: italic;
+}
+
+.title_text1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 80vh;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'karla' sans-serif;
+    padding-top: 150px;
+
+
+}
+
+.title_textp {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#photo img {
+    width: 30%;
+    height: 350px;
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+}
+
+.select {
+    min-width: 100%;
+    min-height: 30vh;
+    background-color: rgba(0, 0, 255, 0.537);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.select a:first-child {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: blue;
+    color: white;
+    font-family: sans-serif;
+    padding: 12px, 5px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+}
+
+.select a:last-child {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    padding: 12px, 5px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    transition: .3s ease;
+}
+
+.select .hov2:hover {
+    background-color: white;
+    color: black;
+}
+
+.select .hov1:hover {
+    background-color: white;
+    color: black;
+
+}
 .bg-image {
     background-image: url("../img/mbr-18.jpg");
     max-width: 100%;
@@ -98,9 +265,62 @@
 {
     background-color: rgb(12, 22, 53);   
 }
+footer
+{
+    width: 100%;
+    height: 100px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+font-family: Worksans;
+color: white;
+background-color: rgba(0, 0, 255, 0.537);
+
+}
 
 @media only screen and (min-width:321px) and (max-width:767px) {
-
+    .story_title
+    {
+        font-size: 25px;
+    }
+   #title .titlehead
+    {
+        font-size: 25px;
+       position: absolute;
+       left: 1%;
+       top: 5%;
+    }
+    #photo img
+    {
+       
+        width: 220px;
+        height: auto;
+    }
+    .select
+    {
+        position: relative;
+        bottom: 15%;
+        margin-bottom: 10%;
+    }
+    #title p
+    {
+font-size: 15px;
+    }
+    #title p:hover
+    {
+       color: black;
+    }
+   
+    .story_text
+    {
+        padding-bottom: 50px;
+        width: 90%;
+        font-size: 20px;
+        padding-left: 39px;
+        text-align: justify;
+    }
     .bg-texts h1{
         width: 100%;
         display: flex;
@@ -122,6 +342,12 @@
 @media only screen and (min-width: 768px) and (max-width:1280px) 
 {
 
+    .story_text
+    {
+        padding-bottom: 50px;
+        width: 90%;
+        text-align: justify;
+    }
     .bg-texts h1{
         width: 100%;
         display: flex;
